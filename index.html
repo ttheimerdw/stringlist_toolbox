@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Ideas:
+         \r\n to comma with option to remove a comma at the end of the last line if it exists.
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String List Toolbox</title>
+    <style type="text/css">
+        .fa-list {color: darkcyan}
+    </style>
+    <script src="https://kit.fontawesome.com/dcbf1592ff.js"></script>
+</head>
+<body>
+    <h1><i class="far fa-list"></i> Text List Toolbox <span style="color: darkred"><i class="fas fa-wrench"></i></span></h1>
+    <input type=file id=files />
+    <button id=upload>Upload the selected file</button>
+    <br/><br/>
+    <input type="radio" name="arFunc" id="afSort" value="afsort" checked />Sort&nbsp;&nbsp;
+    <input type="radio" name="arFunc" id="afUnused" value="afunused" />-unused-&nbsp;
+    <br />
+    <input type="radio" name="sortorder" id="soAsc" value="soasc" checked />Ascending&nbsp;&nbsp;
+    <input type="radio" name="sortorder" id="soDec" value="sodec" />Descending&nbsp;&nbsp;
+    <br />
+    <input type="radio" name="sortfunc" id="sfAlpha" value="sfalpha" checked />Alpha sort&nbsp;&nbsp;
+    <input type="radio" name="sortfunc" id="sfLength" value="sflength" />Sort by Length
+    <br />
+    <input type="radio" name="sorttype" id="stCaseIns" value="stcaseins" checked />Case insensitiveSort&nbsp;&nbsp;
+    <input type="radio" name="sorttype" id="stCaseSen" value="stcasesen" />Case sensitive&nbsp;
+    <br />
+    <input type="checkbox" name="makeunique" id="makeUnique" /> Remove duplicates
+    <br />
+    <button id="startProcess__btn">Start Processing</button>
+    <br /><br />
+    <label for="strlist__TA">String list</label>
+    <button id=clearTA style="margin-left:12em">Clear</button>
+    <span style="margin-left: 1em">Line count: </span><span id="lineCnt__span"></span> <br />
+    <textarea id="strlist__TA" rows="20" cols="40" wrap="soft" style="white-space: pre"></textarea>
+
+    <br /><br />
+    <button id="insight">Insight</button>
+
+    <br /><br />
+    Possible functions to add<br />
+    <textarea  rows="20" cols="60">
+        - Char count for longest line.  Update when click on label. Blank with changes.
+        - reverse a list. Consider creating a function const reverse = str =>str.split('\r\n').reverse().join('\r\n');
+        - Remove duplicate lines
+        - Remove empty lines
+        - Remove leading white space
+        - Give Sort the options of case in/sensitive
+        - Sort #s in value order.
+        - Randomize the order of the items in the list.
+        - Replace spaces with underscores in each line.
+        - Remove spaces and use camel case in each line.
+        - Generate a list of words randomly chosen from the front page of the current NYTimes.
+        - Trim off everything after a target string in each line. (w/option to remove char)
+    </textarea>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- * * * * * * * * * * * * * *   J a v a S c r i p t   * * * * * * * * * * * * * * -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="common.js"></script>
+    <script type="application/javascript">
+
+    </script>
+
+</body>
+</html>
