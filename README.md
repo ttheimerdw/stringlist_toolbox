@@ -1,4 +1,5 @@
 # stringlist_toolbox
-Adding a line for testing.
-Adding another line in GitHub
-And another from GitHub
+Adding a line for testing.<br />
+Adding another line in GitHub<br />
+And another from GitHub<br />
+A Sunday line<br />
